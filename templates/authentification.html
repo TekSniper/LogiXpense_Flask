@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="{{url_for('static', filename='wwwroot/node_modules/@fortawesome/fontawesome-free/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='wwwroot/node_modules/bulma/css/bulma.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <title>Authentification</title>
+</head>
+
+<body>
+    <section class="hero has-background-primary-light is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-4-desktop is-4-widescreen is-5-tablet">
+                        <form class="box">
+                            <div class="field">
+                                <label for="identifiant" class="label">Identifiant</label>
+                                <div class="control has-icons-left">
+                                    <input type="text" name="identifiant" id="identifiant" class="input" required autofocus
+                                        placeholder="Login/Numéro de téléphone/Email" />
+                                    <span class="icon is-left">
+                                        <i class="fas fa-circle-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="pwd" class="label">Mot de passe</label>
+                                <div class="control has-icons-left">
+                                    <input type="password" name="pwd" id="pwd" class="input" required="required"
+                                        placeholder="Votre mot de passe" />
+                                    <span class="icon is-left">
+                                        <i class="fas fa-key"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="voir" id="voir" class="checkbox">
+                                    Afficher le mot de passe
+                                </label>                                
+                            </div>
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button type:"submit" class="button is-primary">
+                                        Se connecter &nbsp;&nbsp;
+                                        <span class="icon is-right">
+                                            <i class="fas fa-right-to-bracket"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="control">
+                                    <input type="reset" value="Annuler" class="button is-danger is-outlined">
+                                </div>
+                            </div>
+                            <div class="field">
+                                N'avez-vous pas de compte ? <a href="#">Inscrivez-vous.</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

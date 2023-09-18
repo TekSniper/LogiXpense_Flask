@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="{{url_for('static', filename='wwwroot/node_modules/@fortawesome/fontawesome-free/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='wwwroot/node_modules/bulma/css/bulma.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <title>Bienvenue</title>
+</head>
+
+<body>
+    <div class="block">
+        <header class="header">
+            <a class="header-logo" href="/">LogiXpense</a>
+            <div class="header-btn">
+                <a class="button is-info" href="auth">S'identifier</a>
+                <a class="button is-primary is-outlined">S'inscrire</a>
+            </div>
+            <nav class="header-menu">
+                <a href="#" class="link">A propos</a>
+                <a href="#" class="link">Contact</a>
+            </nav>
+        </header>
+
+        <div class="columns">
+            <div class="column">
+                <h1 class="title">
+                    Bienvenue sur LogiXpense !
+                </h1>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <a class="button is-info" href="/auth">S'identifier</a>
+                    </div>
+                    <div class="control">
+                        <a class="button is-primary is-outlined">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

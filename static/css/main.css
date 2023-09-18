@@ -1,0 +1,44 @@
+
+.is-outlined{
+    transition: 0.45s ease;
+}
+.header{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px;
+    line-height: 70px;
+    background-color: #181818;
+    position: fixed;
+    top: 0;
+}
+.header .header-logo{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.header .header-menu{
+    color: white;
+    margin-right: 30px;
+    float: right;
+}
+.header .header-menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+.header .header-menu a:hover{
+    transition: 0.4s ease;
+    color: aquamarine;
+}
+.header .header-btn{
+    margin-right: 30px;
+    float: right;
+}
+.header .header-btn a{
+    margin-top: 15px;
+}
+.columns{
+    padding-top: 75px;
+}
